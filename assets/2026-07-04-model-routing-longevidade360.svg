@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Roteamento de modelo no Longevidade 360</title>
+  <desc id="desc">Diagrama sanitizado mostrando Longevidade 360, Hermes como harness, politica de modelo, modelos antes e depois, observabilidade e fronteira publica.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f3ef; }
+      .title { font: 700 58px Arial, sans-serif; fill: #17202a; }
+      .subtitle { font: 400 31px Arial, sans-serif; fill: #3d4b56; }
+      .label { font: 700 30px Arial, sans-serif; fill: #17202a; }
+      .text { font: 400 26px Arial, sans-serif; fill: #24313a; }
+      .small { font: 400 22px Arial, sans-serif; fill: #56636d; }
+      .tiny { font: 400 20px Arial, sans-serif; fill: #6b737a; }
+      .box { rx: 22; ry: 22; stroke-width: 3; }
+      .case { fill: #d8edf0; stroke: #287b86; }
+      .harness { fill: #f8dfc4; stroke: #b76622; }
+      .policy { fill: #f3edc7; stroke: #9b8736; }
+      .model { fill: #ead7e8; stroke: #845680; }
+      .obs { fill: #dce8d5; stroke: #5e8750; }
+      .risk { fill: #f4d7d0; stroke: #a84b3c; }
+      .arrow { stroke: #38434c; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+      .dashed { stroke-dasharray: 12 10; }
+    </style>
+    <marker id="arrowhead" markerWidth="16" markerHeight="12" refX="15" refY="6" orient="auto">
+      <path d="M 0 0 L 16 6 L 0 12 z" fill="#38434c"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="1600"/>
+
+  <text class="title" x="90" y="120">Roteamento de modelo no Longevidade 360</text>
+  <text class="subtitle" x="90" y="174">Caso pessoal de governanca de custo em agentes, com dados sensiveis omitidos.</text>
+
+  <rect class="box case" x="120" y="270" width="360" height="170"/>
+  <text class="label" x="150" y="320">Caso</text>
+  <text class="text" x="150" y="365">Longevidade 360</text>
+  <text class="small" x="150" y="405">rotina diaria</text>
+
+  <rect class="box harness" x="620" y="270" width="360" height="170"/>
+  <text class="label" x="650" y="320">Harness</text>
+  <text class="text" x="650" y="365">Hermes</text>
+  <text class="small" x="650" y="405">script + resumo curto</text>
+
+  <rect class="box policy" x="1120" y="270" width="360" height="170"/>
+  <text class="label" x="1150" y="320">Politica</text>
+  <text class="text" x="1150" y="365">modelo por tarefa</text>
+  <text class="small" x="1150" y="405">custo + qualidade</text>
+
+  <path class="arrow" d="M 480 355 L 610 355"/>
+  <path class="arrow" d="M 980 355 L 1110 355"/>
+
+  <rect class="box model" x="120" y="590" width="610" height="260"/>
+  <text class="label" x="160" y="650">Antes</text>
+  <text class="text" x="160" y="705">heranca implicita do default</text>
+  <text class="small" x="160" y="760">cron diario herdava Opus 4.6</text>
+  <text class="small" x="160" y="810">US$ 19 entre 01 e 26/jun</text>
+
+  <rect class="box model" x="870" y="590" width="610" height="260"/>
+  <text class="label" x="910" y="650">Depois</text>
+  <text class="text" x="910" y="705">modelo explicito no job</text>
+  <text class="small" x="910" y="760">default geral: Sonnet 4.5</text>
+  <text class="small" x="910" y="810">cron diario: Haiku 4.5</text>
+
+  <path class="arrow dashed" d="M 730 720 L 860 720"/>
+  <text class="small" x="744" y="690">29/jun</text>
+
+  <rect class="box obs" x="120" y="1000" width="1360" height="210"/>
+  <text class="label" x="160" y="1060">Observabilidade que fecha o KR1</text>
+  <text class="text" x="160" y="1120">Antes: US$ 0,113/exec (Opus, regime estavel)</text>
+  <text class="text" x="160" y="1170">Depois: US$ 0,022/exec (Haiku), 81% menos</text>
+
+  <rect class="box risk" x="120" y="1305" width="1360" height="170"/>
+  <text class="label" x="160" y="1365">Fronteira publica</text>
+  <text class="small" x="160" y="1420">Sem dados de saude, telefones, tokens, paths sensiveis, prints privados</text>
+  <text class="small" x="160" y="1460">ou configuracao completa do runtime.</text>
+
+  <text class="tiny" x="120" y="1545">CTO Agents Academy | KR1 | diagrama sanitizado para write-up publico e LinkedIn</text>
+</svg>
