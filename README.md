@@ -1,32 +1,33 @@
 # CTO Agents Academy
 
-Write-ups e Learning Objects para formar **CTO de IA aplicada a Higher Education**. O modelo é commodity. O que compounda é harness, contrato de papel, rubrica, workflow e evidência pública.
+Write-ups e working copies para formar **CTO de IA aplicada a Higher Education**. O modelo é commodity. O que compounda é harness, contrato de papel, rubrica, workflow e evidência pública.
 
-Hermes é o harness de referência deste repo. O Learning Studio (`cto-agents-learning-studio`) é o SoR educacional: nada entra lá sem gate humano.
+Hermes é o harness de referência. O mapa oficial de objetos, paths e grafos vive no SoR:
 
-## Mapa
+**[cto-agents-learning-studio](https://github.com/brunaca7/cto-agents-learning-studio)** — [catálogo](https://github.com/brunaca7/cto-agents-learning-studio/blob/main/catalog/objects.yaml) · [path](https://github.com/brunaca7/cto-agents-learning-studio/blob/main/paths/cto-he-core.md) · [competências](https://github.com/brunaca7/cto-agents-learning-studio/blob/main/graphs/competency.md) · [conteúdo](https://github.com/brunaca7/cto-agents-learning-studio/blob/main/graphs/content.md)
 
-| Pasta | Função |
-|---|---|
-| [curriculum/](curriculum/) | LOs na ordem de estudo |
-| [cases/](cases/) | Evidência pública (KR1) |
-| [labs/](labs/) | Exercícios aferíveis |
-| [references/sources.md](references/sources.md) | Pacote de fontes extraídas (sem depender do X) |
-| [prompts/codex-followup.md](prompts/codex-followup.md) | Trabalho que este commit não fecha |
+## Mapa local (working copy)
 
-## Ordem de estudo
+| Pasta | Função | LO |
+|---|---|---|
+| [curriculum/00-espectro-e-contratos.md](curriculum/00-espectro-e-contratos.md) | Espectro e contratos | LO-010 |
+| [curriculum/01-harness-e-politica-de-modelo.md](curriculum/01-harness-e-politica-de-modelo.md) | Harness e modelo | LO-011 |
+| [curriculum/02-rubrica-grader-memoria.md](curriculum/02-rubrica-grader-memoria.md) | Rubrica e grader | LO-012 |
+| [curriculum/03-workflows-dinamicos.md](curriculum/03-workflows-dinamicos.md) | Workflows | LO-013 |
+| [curriculum/04-loops-e-rotinas.md](curriculum/04-loops-e-rotinas.md) | Loops | LO-014 |
+| [curriculum/05-integracao-institucional.md](curriculum/05-integracao-institucional.md) | n8n + Hermes | LO-015 |
+| [cases/kr1-roteamento-modelo-longevidade360.md](cases/kr1-roteamento-modelo-longevidade360.md) | Evidência de custo | suporte LO-011 |
+| [labs/](labs/) | Exercícios | LO-011, LO-013 |
+| [references/sources.md](references/sources.md) | Fontes extraídas | todos |
+| [prompts/codex-followup.md](prompts/codex-followup.md) | Trabalho residual | — |
 
-1. Espectro e contratos de papel
-2. Harness e política de modelo — evidência: [KR1 Longevidade 360](cases/kr1-roteamento-modelo-longevidade360.md)
-3. Rubrica, grader separado, memória destilada
-4. Workflows dinâmicos e seis padrões
-5. Loops e rotinas
-6. Integração institucional (n8n + Hermes)
+Sequência: LO-010 → 011 → 012 → 013 → 014 → 015.
 
 ## KR1 em uma linha
 
-Job recorrente e estruturado não herda o modelo default. No Longevidade 360, custo por execução estável caiu de US$ 0,113 (Opus) para US$ 0,022 (Haiku), **81%**. Detalhe e limites da evidência no caso.
+Job recorrente e estruturado não herda o modelo default. Custo estável por execução: US$ 0,113 → US$ 0,022 (**81%**).
 
-## Regra de corte para próxima fonte
+## Como promover um LO
 
-Entra se ensinar padrão verificável (harness, loop, skill, grader, handoff, custo). Não entra produto isolado, modelo de ficção, T2I promocional ou funil de conteúdo.
+- **LO-001:** vault de staging sem `.git` → gate explícito → `scripts/promote_from_staging.sh --push` → branch `promote/...`, sem merge.
+- **LO-010–015:** já catalogados no Studio como `draft-sor`. Texto aqui. Estado `promoted` só depois de gate humano.
