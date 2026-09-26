@@ -1,0 +1,13 @@
+{
+  "name": "cto-agents-academy-docs-preview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Markdown documentation preview server for the CTO Agents Academy content repo.",
+  "type": "module",
+  "scripts": {
+    "preview": "node preview.mjs"
+  },
+  "dependencies": {
+    "marked": "12.0.2"
+  }
+}
