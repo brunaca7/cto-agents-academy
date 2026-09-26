@@ -1,0 +1,12 @@
+{
+  "name": "CTO Agents Academy — docs",
+  "user": "ubuntu",
+  "install": "cd .cursor && npm ci",
+  "terminals": [
+    {
+      "name": "docs-preview",
+      "command": "cd .cursor && PORT=4000 node preview.mjs"
+    }
+  ],
+  "ports": [4000]
+}
